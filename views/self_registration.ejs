@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EaseMyTrip Self Registration</title>
+	<link rel="stylesheet" type="text/css" href="/css/register.css">
+	<style>
+		label.radio {
+      		position: relative;
+      		display: inline-block;
+      		margin: 0px 0px 0px 0;
+      		
+      		font-size: 10px;
+        }
+        
+	</style>
+</head>
+<body>
+     <form id="self_register_form">
+      <h2>Hotel Details</h2>
+      	<p style="color: red;">* Required</p>
+		<p>
+			<label for="hname" class="floatLabel">Hotel Name*</label>
+			<input id="hname" name="hname" type="text" required autofocus>
+		</p>
+
+		<p>
+			<label for="address1" class="floatLabel">Address Line 1*</label>
+			<input id="address1" name="address1" type="text" required autofocus>
+		</p>
+
+		<p>
+			<label for="address2" class="floatLabel">Address Line 2*</label>
+			<input id="address2" name="address2" type="text" required autofocus>
+		</p>
+
+		<p>
+			<label for="pin" class="floatLabel">PIN Code*</label>
+			<input id="pin" name="pin" type="text" required autofocus>
+		</p>
+
+		<p>
+			<label for="city" class="floatLabel">City*</label>
+			<input id="city" name="city" type="text" required autofocus>
+		</p>
+
+		<p>
+			<label for="state" class="floatLabel">State*</label>
+			<input id="state" name="state" type="text" required autofocus>
+		</p>
+
+		<p>
+			<label for="contact" class="floatLabel">Contact No.*</label>
+			<input id="contact" name="contact" type="text" required autofocus>
+		</p>
+
+		<p>
+			<label for="altcontact" class="floatLabel">Alternate Contact No.*</label>
+			<input id="altcontact" name="altcontact" type="text" required autofocus>
+		</p>
+
+		<p>
+			 <label for="facilities" class="floatLabel">Facilities*</label>
+		</p><br><br>
+	<p style="font-size: 12px; margin-top: -14px; margin-bottom: 2px;">
+	 	
+			<input type="checkbox" name="facility1" value="FreeWi-fi" style="margin-bottom: -10px; margin-left: -100px; margin-top: 10px" /> Free Wi-fi
+	 		
+  			<input type="checkbox" name="facility2" value="Restaurant" style="margin-top:: 30px; margin-bottom: -10px; margin-left: -100px;"/> Restaurant	
+
+  			<input type="checkbox" name="facility3" value="Gym" style="margin-top:: 20px; margin-bottom: -10px; margin-left: -100px;"/> Gym
+
+  			<input type="checkbox" name="facility4" value="Parking" style="margin-top:: 20px; margin-bottom: -10px; margin-left: -100px;"/> Parking
+  			<input type="checkbox" name="facility5" value="SwimmingPool" style="margin-top:: 20px; margin-bottom: -10px; margin-left: -100px;"/> Swimming Pool
+
+  			<input type="checkbox" name="facility6" value="Bar" style="margin-top:: 20px; margin-bottom: -10px; margin-left: -100px;"/> Bar
+  			<input type="checkbox" name="facility7" value="Spa" style="margin-top:: 20px; margin-bottom: -10px; margin-left: -100px;"/> Spa
+  			<input type="checkbox" name="facility8" value="Lounge" style="margin-top:: 20px; margin-bottom: -10px; margin-left: -100px;"/> Lounge
+  			<input type="checkbox" name="facility9" value="Jacuzzi" style="margin-top:: 20px; margin-bottom: -10px; margin-left: -100px;"/> Jacuzzi
+  			<input type="checkbox" name="facility10" value="Cafe" style="margin-top:: 20px; margin-bottom: -10px; margin-left: -100px;"/> Cafe
+  			<input type="checkbox" name="facility11" value="Yoga" style="margin-top:: 20px; margin-bottom: -10px; margin-left: -100px;"/> Yoga 
+  			<br><br><br>
+  	</p>	
+
+
+		<p>
+			 <label for="hphoto" class="floatLabel">Upload Hotel's Photo:*</label><br><br>	 
+			 <input id="hphoto" name="hphoto" type="file" required autofocus> 
+		</p>
+
+		<p>
+			<label for="pcontactname" class="floatLabel">Person Of Contact's Name*</label>
+			<input id="pcontactname" name="pcontactname" type="text" required autofocus>
+		</p>
+
+		<p>
+			<label for="pcontact" class="floatLabel">Person Of Contact's Phone No.*</label>
+			<input id="pcontact" name="pcontact" type="text" required autofocus>
+		</p>
+
+		<p>
+			<label for="pcontactemail" class="floatLabel">Person Of Contact's Email Id.*</label>
+			<input id="pcontactemail" name="pcontactemail" type="text" required autofocus>
+		</p>
+
+		<p>
+			<label for="pcontactaddress" class="floatLabel">Person Of Contact's Address*</label>
+			<input id="pcontactaddress" name="pcontactaddress" type="text" required autofocus>
+		</p>
+
+		<p style="margin-bottom: -5px;">
+			 <label for="pcontactid" class="floatLabel">Upload Person Of Contact's ID Proof:*</label>
+		</p>
+		<br><br> 
+		<p>
+			 <label for="name" class="floatLabel" style="font-size: 11px;">(Aadhaar card, voter id, etc.)
+			 </label>
+			 <br> 
+			 <input id="pcontactid" name="pcontactid" type="file"> 
+		</p>
+
+		<p>
+			 <label for="addressproof" class="floatLabel">Upload Hotel's Address Proof:*</label><br><br>	 
+			 <input id="addressproof" name="addressproof" type="file" required autofocus> 
+		</p>
+
+
+
+
+		<p>
+			<button class="btn btn-success" type="submit" style="margin-left: 38%; border-radius: 5px; background-color: #ffb84d; color: white; font-size: 25px;">Submit</button>
+
+		</p>
+	</form>
+
+<script>
+	const self_register_form = document.getElementById('self_register_form');
+
+	self_register_form.addEventListener('submit', function(f){
+		f.preventDefault();
+
+		const formData1 = new FormData1(this);
+        const data= 
+        { "hname": document.getElementById("hname").value,
+          "address1": document.getElementById("address1").value,
+          "address2": document.getElementById("address2").value,
+          "pin": document.getElementById("pin").value,
+          "city": document.getElementById("city").value,
+          "state": document.getElementById("state").value,
+          "contact": document.getElementById("contact").value,
+          "altcontact": document.getElementById("altcontact").value,
+          "hphoto": document.getElementById("hphoto").value,
+          "pcontactname": document.getElementById("pcontactname").value,
+          "pcontact": document.getElementById("pcontact").value,
+          "pcontactemail": document.getElementById("pcontactemail").value,
+          "pcontactaddress": document.getElementById("pcontactaddress").value,
+          "pcontactid": document.getElementById("pcontactid").value,
+          "addressproof": document.getElementById("addressproof").value
+        }
+        console.log(data);
+        //console.log("Logged successfully!");
+		fetch('http://localhost:5000/api/users/newhotel', {
+			method: 'POST',
+			headers: {
+             'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+    		},
+    		
+    		body: JSON.stringify(data) // body data type must match "Content-Type" header
+		}).then(function (response){
+		    return response.json();
+			
+		}).then(function (text){
+			console.log(text);
+			var user = text;
+			//sessionStorage.setItem("chosen", user);
+			window.location.replace("/");
+
+		}).catch(function (error){
+		
+		})
+        
+	});
+
+</script>	
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+<script src="js/register.js"></script>
+
+
+</body>
+</html>
